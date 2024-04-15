@@ -37,56 +37,63 @@ public class Student {
             return name;
         }
 
-        public void setName (String name){
+        public Builder setName (String name){
             this.name = name;
+            return this;
         }
 
         public int getRollNo () {
             return rollNo;
         }
 
-        public void setRollNo ( int rollNo){
+        public Builder setRollNo ( int rollNo){
             this.rollNo = rollNo;
+            return this;
         }
 
         public String getPhoneNo () {
             return phoneNo;
         }
 
-        public void setPhoneNo (String phoneNo){
+        public Builder setPhoneNo (String phoneNo){
             this.phoneNo = phoneNo;
+            return this;
         }
 
         public String getEmail () {
             return email;
         }
 
-        public void setEmail (String email){
+        public Builder setEmail (String email){
             this.email = email;
+            return this;
         }
 
         public Department getDepartment () {
             return department;
         }
 
-        public void setDepartment (Department department){
+        public Builder setDepartment (Department department){
             this.department = department;
+            return this;
         }
 
         public Semester getSemester () {
             return semester;
         }
 
-        public void setSemester (Semester semester){
+        public Builder setSemester (Semester semester){
             this.semester = semester;
+            return this;
         }
 
         public University getUniversity () {
             return university;
         }
 
-        public void setUniversity (University university){
+        public Builder setUniversity (University university){
             this.university = university;
+            return this;
         }
 
         private void validate () {
