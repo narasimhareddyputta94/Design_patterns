@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Stduentregistery {
 
-    Map<String , Student> studentMap = new HashMap<>();
+    private Map<String , Student> studentMap = new HashMap<>();
 
     void register(String key, Student student){
         studentMap.put(key, student);
