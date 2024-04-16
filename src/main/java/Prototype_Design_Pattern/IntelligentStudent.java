@@ -1,6 +1,8 @@
 package Prototype_Design_Pattern;
 
 public class IntelligentStudent extends Student{
+
+    private int iq;
     public int getIq() {
         return iq;
     }
@@ -9,7 +11,7 @@ public class IntelligentStudent extends Student{
         this.iq = iq;
     }
 
-    private int iq;
+
 
     public IntelligentStudent(IntelligentStudent student) {
         super(student);

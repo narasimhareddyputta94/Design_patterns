@@ -7,15 +7,15 @@ public class Client {
         Student aprBeginerBatchPrototype = new Student();
         aprBeginerBatchPrototype.setBatchName("apr 23 beginer");
         aprBeginerBatchPrototype.setAvgBatchpsp(89);
-
         stduentregistery.register("aprBeginerBatch", aprBeginerBatchPrototype);
 
         IntelligentStudent intelligentStudent = new IntelligentStudent();
         intelligentStudent.setAvgBatchpsp(99);
         intelligentStudent.setBatchName("Intelligent Batch");
         intelligentStudent.setIq(100);
-
         stduentregistery.register("IntelligentBatch", intelligentStudent);
+
+
 
 
     }
