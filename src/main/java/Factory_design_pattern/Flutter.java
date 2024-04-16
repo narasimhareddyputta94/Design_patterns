@@ -1,6 +1,13 @@
 package Factory_design_pattern;
 
 public class Flutter {
+
+    SupportedPlatforms supportedPlatforms;
+
+    public Flutter(SupportedPlatforms supportedPlatforms) {
+        this.supportedPlatforms = supportedPlatforms;
+    }
+
     public void setTheme() {
         System.out.println("Setting Flutter theme");
     }
@@ -13,13 +20,16 @@ public class Flutter {
         System.out.println("Setting Flutter animation");
     }
 
-    public UIFactory createUIFactory(SupportedPlatforms platform) {
-        if (platform == SupportedPlatforms.ANDROID) {
-            return new AndroidUIfactory();
-        } else{
-            return new IosUIFactory();
-        }
+    public UIFactory createUIFactory() {
+//        if (supportedPlatforms == SupportedPlatforms.ANDROID) {
+//            return new AndroidUIfactory();
+//        } else if (supportedPlatforms == SupportedPlatforms.IOS) {
+//            return new IosUIFactory();
+//        }
+//        return null;
+        return UIFactoryFactory.getUIFactory(supportedPlatforms);
     }
+
 
 
 }
