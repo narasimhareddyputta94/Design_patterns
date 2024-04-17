@@ -17,7 +17,6 @@ public class Student {
         this.email = builder.getEmail();
         this.department = builder.getDepartment().toString();
         this.semester = builder.getSemester().toString();
-        this.university = builder.getUniversity().toString();
     }
 
     public static Builder createBuilder() {
@@ -31,7 +30,6 @@ public class Student {
         private String email;
         private Department department;
         private Semester semester;
-        private University university;
 
         public String getName () {
             return name;
@@ -87,14 +85,6 @@ public class Student {
             return this;
         }
 
-        public University getUniversity () {
-            return university;
-        }
-
-        public Builder setUniversity (University university){
-            this.university = university;
-            return this;
-        }
 
         private void validate () {
             if (name == null || name.isEmpty()) {

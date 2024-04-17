@@ -39,7 +39,6 @@ public class Client {
                 .setEmail("narasimha@123")
                 .setDepartment(Department.CSE)
                 .setSemester(Semester.FIRST)
-                .setUniversity(University.JNTU)
                 .build();
 
         System.out.println("DEBUG: " + student.toString());
