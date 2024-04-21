@@ -1,11 +1,14 @@
-package decorator_design_pattern;
+package decorator_design_pattern.PizzaSoftware.Base;
 
-public class Base implements PizzaConstituents{
+import decorator_design_pattern.PizzaSoftware.PizzaConstituents;
+
+
+public class BaseSmall implements PizzaConstituents {
     PizzaConstituents pizzaConstituents;
-    Base(){
+    public BaseSmall(){
 
     }
-    Base(PizzaConstituents pizzaConstituents){
+    BaseSmall(PizzaConstituents pizzaConstituents){
         this.pizzaConstituents = pizzaConstituents;
     }
     @Override

@@ -1,6 +1,8 @@
-package decorator_design_pattern;
+package decorator_design_pattern.PizzaSoftware.NonCheeseToppings;
 
-public class ChickenTopping implements PizzaConstituents{
+import decorator_design_pattern.PizzaSoftware.PizzaConstituents;
+
+public class ChickenTopping implements PizzaConstituents {
     PizzaConstituents pizzaConstituents;
 
     public ChickenTopping(PizzaConstituents pizzaConstituents) {
