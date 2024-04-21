@@ -12,5 +12,9 @@ public class client {
         System.out.println("Discription: " + pizza.getDiscription());
 
         PizzaConstituents pizza1 = new CheeseTopping(new BaseSmall());
+        System.out.println("Cost: " + pizza1.getCost());
+        System.out.println("Discription: " + pizza1.getDiscription());
+
+
     }
 }
