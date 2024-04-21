@@ -14,10 +14,10 @@ public class Client {
         button = uiFactory.createButton();
         button.render();
 
-        flutter = new Flutter(SupportedPlatforms.WEB);
-        uiFactory = flutter.createUIFactory();
-        button = uiFactory.createButton();
-        button.render();
+//        flutter = new Flutter(SupportedPlatforms.WEB);
+//        uiFactory = flutter.createUIFactory();
+//        button = uiFactory.createButton();
+//        button.render();
 
 
 
