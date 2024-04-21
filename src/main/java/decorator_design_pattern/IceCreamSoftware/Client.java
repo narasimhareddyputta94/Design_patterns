@@ -4,12 +4,14 @@ import decorator_design_pattern.IceCreamSoftware.Cones.AlcholCone;
 import decorator_design_pattern.IceCreamSoftware.Cones.BlueBeeryCone;
 import decorator_design_pattern.IceCreamSoftware.Cones.CannabisCone;
 import decorator_design_pattern.IceCreamSoftware.Cones.VanillaCone;
+import decorator_design_pattern.IceCreamSoftware.FruitToopings.Mnago;
 import decorator_design_pattern.IceCreamSoftware.FruitToopings.StrawBerry;
 import decorator_design_pattern.IceCreamSoftware.chipsToppings.Choclchips;
 import decorator_design_pattern.IceCreamSoftware.chipsToppings.vanillachips;
 
 public class Client {
     public static void main(String[] args) {
+
         IceCream iceCream = new CannabisCone();
         System.out.println(iceCream.getDiscription() + " Cost: " + iceCream.getCost());
 
@@ -39,5 +41,14 @@ public class Client {
 
         IceCream iceCream9 = new StrawBerry(new vanillachips(new Choclchips(new VanillaCone())));
         System.out.println(iceCream9.getDiscription() + " Cost: " + iceCream9.getCost());
+
+//        IceCream iceCream10 = new Mnago();
+//        System.out.print(iceCream10.getDiscription() + " Cost: " + iceCream10.getCost());
+
+        IceCream iceCream11 = new Mnago(new Choclchips(new VanillaCone()));
+        System.out.println(iceCream11.getDiscription() + " Cost: " + iceCream11.getCost());
+
+        IceCream iceCream12 = new Mnago(new vanillachips(new Choclchips(new BlueBeeryCone())));
+        System.out.println(iceCream12.getDiscription() + " Cost: " + iceCream12.getCost());
     }
 }
